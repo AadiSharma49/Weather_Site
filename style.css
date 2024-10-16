@@ -1,0 +1,111 @@
+body
+{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: hsl(0,0%,95%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weatherForm
+{
+    margin: 20px;
+}
+.cityInput
+{
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button[type="submit"]:hover{ 
+background-color: #0056b3;
+transform: translateY(-2px);
+}
+button[type="submit"]:active{
+    background-color: #004085;
+    transform: translateY(0);
+}
+.box
+{
+    background: linear-gradient(180deg,hsl(210, 100%, 79%),hsl(40, 100%, 71%));
+    padding: 52px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    min-width: 333px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+h1
+{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+p
+{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.cityDisplay,.tempDisplay
+{
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 0%,0.75);
+    margin-bottom: 25px;
+}
+.humidityDisplay
+{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.descDisplay
+{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+.weatherEmoji
+{
+    margin: 2px;
+    font-size: 5.2rem;
+}
+.errorDisplay
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+@media(max-width:930px){
+    .box{
+        justify-content: space-between;
+        padding: 65px 0px;
+        position: relative;
+    }
+}
+@media(max-width:620px){
+    .cityDisplay
+    {
+        font-size: 2rem;
+        font-weight: 700;
+        color: hsl(0, 0%, 0%,0.75);
+        margin-bottom: 25px;
+    }
+}
