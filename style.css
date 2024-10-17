@@ -93,19 +93,10 @@ p
     color: rgba(0, 0, 0, 0.705);
 }
 
-@media(max-width:930px){
+@media(max-width:950px){
     .box{
         justify-content: space-between;
         padding: 65px 0px;
         position: relative;
-    }
-}
-@media(max-width:620px){
-    .cityDisplay
-    {
-        font-size: 2rem;
-        font-weight: 700;
-        color: hsl(0, 0%, 0%,0.75);
-        margin-bottom: 25px;
     }
 }
