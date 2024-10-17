@@ -100,11 +100,11 @@ function getWeatherEmoji(weatherId)
         case (weatherId>= 600 && weatherId<700):
             return "❄️";
         case (weatherId>= 700 && weatherId<800):
-                return ""; 
+         return "🌫️"; 
         case (weatherId===800):
-                    return "☀️"; 
+       return "☀️"; 
         case (weatherId>= 801 && weatherId<810):
-                        return "☁️"; 
+         return "☁️"; 
          default:
          return "⭐"           
 
